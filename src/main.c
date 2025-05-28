@@ -43,6 +43,7 @@ int main(){
         tokens[t_count++] = NULL; // Null terminated token array
 
         fork();
+        hello;
         execve(tokens[0], tokens, __environ);
 
     }
