@@ -42,6 +42,7 @@ int main(){
         }
         tokens[t_count++] = NULL; // Null terminated token array
 
+        fork();
         execve(tokens[0], tokens, __environ);
 
     }
